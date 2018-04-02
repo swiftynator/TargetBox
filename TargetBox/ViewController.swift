@@ -34,18 +34,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         numberOfBoxLabel.layer.cornerRadius = numberOfBoxLabel.frame.size.height / 2
         numberOfBoxLabel.clipsToBounds = true
-        
         numberOfBoxLabel.text = "Собирай заказ!"
-        
         
         calculateOutlet.layer.cornerRadius = calculateOutlet.frame.size.height / 2
         calculateOutlet.clipsToBounds = true
-        
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
     @IBAction func calculateButton(_ sender: UIButton) {
@@ -82,6 +74,5 @@ class ViewController: UIViewController {
         view.endEditing(true)
         super.touchesBegan(touches, with: event)
     }
-    
 }
 
